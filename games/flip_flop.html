@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.gamecreation.org/games/flip_flop by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Jan 2026 12:36:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<!-- Non-required, but good meta tags -->
+	<meta name="author" content="Game Creation Society">
+	
+		<meta name="description" content="Welcome to Flip Flop! Flip Flop is a competitve multiplayer platformer, where something drastically changes every 15 seconds! Try to keep up with the changes (and your friends), as the last one left standing wins!">
+		<meta property="og:description" content="Welcome to Flip Flop! Flip Flop is a competitve multiplayer platformer, where something drastically changes every 15 seconds! Try to keep up with the changes (and your friends), as the last one left standing wins!">
+	
+	<meta name="keywords" content="game, games, game creation, gamemaking, game making, unity, unreal, student, students, college, cmu, carnegie mellon, carnegie mellon university, game creation society, gcs">
+	<meta name="theme-color" content="#b12d36">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="flip_flop.html">
+	
+		<meta property="og:image" content="../images/official_no_back_white.png">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131154366-1"></script>
+	<script src="../scripts/analytics.js"></script>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/vnd.microsoft.icon">
+	<!-- Web app menifest -->
+	<link rel="manifest" href="../manifest.webmanifest">
+	<!-- Apple touchscreen icon -->
+	<link rel="apple-touch-icon" href="../images/scope_creep/mask512x512.png">
+	<!-- Stylesheet dependencies -->
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/fonts.css">
+	<!-- Title -->
+	<title>Flip Flop | Game Creation Society</title>
+	<meta property="og:title" content="Flip Flop | Game Creation Society">
+</head>
+
+<body>
+	<!-- Preloader -->
+	<script src="../scripts/preloader.js"></script>
+
+	<!-- Header -->
+	<!-- import the image converter -->
+<script type="text/javascript" src="../scripts/img-converter.js"></script>
+
+<!-- Common page header -->
+<div id="page-header" class="fixed-top at-top">
+    <!-- Logo -->
+    <a href="../index.html">
+        <img id="header-img" class="replaceable" src="../images/webp/official_no_back_white_smaller.webp" alt="GCS Logo" onerror="this.src='../images/official_no_back_white_smaller.png';" loading="lazy">
+    </a>
+
+    <!--a id="faq-link" href="/FAQ"></a-->
+
+    <!-- https://stackoverflow.com/a/21919261 -->
+    <input type="checkbox" id="hacky-input" style="display:none;">
+    <label for="hacky-input" style="display:inline;margin-bottom:0;">
+        <div id="header-scope-creep-container">
+            <img id="header-scope-creep" src="../images/scope_creep/ScopeCreepIdle2.gif" alt="Scope Creep" loading="lazy">
+        </div>
+    </label>
+
+        <!-- 
+            The style for this is at header-scope-creep in main.css. 
+            If you make this a link again, you should uncomment that style.
+        -->
+
+         <!--video id="header-scope-creep" autoplay>
+          <source src="images/scope_creep/ScopeCreepIdle2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video--> 
+
+        <!--video id="header-scope-creep" autoplay loop>
+            <source src="images/scope_creep/ScopeCreepIdle2.webm" type="video/webm">
+        </video>
+    </a-->
+
+    <!-- Nav bar -->
+    <nav id="nav-bar">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link button " href="../index.html">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../about.html">
+                    About
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../FAQ.html">
+                    FAQ
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../games.html">
+                    Games
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../members.html">
+                    Members
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../course.html">
+                    Learning
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../contact.html">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!--
+<script>
+    convert("/images/scope_creep/ScopeCreepIdle2", "Scope Creep", "header-scope-creep", "header-scope-creep-container");
+</script>
+-->
+
+
+	<!-- Some logic for header-sized-top-margin conditions -->
+	
+	
+	<div class="container-fluid ">
+		<div class="row">
+			<!-- Content -->
+			<div class="col-12" id="main-content">
+				<!-- Stylesheet dependencies -->
+<link rel="stylesheet" href="../styles/game-page.css">
+<link rel="stylesheet" href="../styles/smartphoto.min.css">
+<script src="../scripts/smartphoto.min.js"></script>
+<script>
+window.addEventListener('DOMContentLoaded',function(){
+    var sp = new SmartPhoto(".js-smartPhoto");
+    sp.on('open',function(){
+        var th = document.getElementById('page-header');
+        th.style.visibility = "hidden";
+    });
+    sp.on('close',function(){
+        var th = document.getElementById('page-header');
+        th.style.visibility = "visible";
+    });
+});
+</script>
+
+<!-- Top image -->
+<div id="game-top-container">
+    
+    <div id="game-tags-container">
+        <p id="game-tags">
+            
+                
+                    Windows
+                
+            
+                
+                    <br>Multiplayer
+                
+            
+                
+                    <br>Controller-Compatible
+                
+            
+                
+                    <br>Unity
+                
+            
+        </p>
+    </div>
+    
+
+    
+    <div id="game-awards-container">
+        <p id="game-awards">
+            
+                
+                    People's Choice Award
+                
+            
+        </p>
+    </div>
+    
+
+    
+    <img id="game-top-img" src="https://stage.gamecreation.org/games/flip-flop/images/title.png" style="object-fit:fill" loading="lazy">
+</div>
+
+<!-- Page content -->
+<div id="game-main-content">
+    <!-- Title and year/semester -->
+    <div class="row no-margin">
+        <div class="col">
+            <h1 class="inline">Flip Flop</h1><h3 class="inline"> - Spring 2019</h3>
+        </div>
+    </div>
+
+    <div class="row no-margin">
+        
+        <div class="game-content-section col-md-4 col-sm-6 col-12">
+            <!-- About -->
+            <h2>About</h2>
+            <p>Welcome to Flip Flop! Flip Flop is a competitve multiplayer platformer, where something drastically changes every 15 seconds! Try to keep up with the changes (and your friends), as the last one left standing wins!</p>
+        </div>
+        
+            <div class="game-content-section col-md-4 col-sm-6 col-12">
+                <!-- Builds -->
+                <h2>Play</h2>
+                <p>
+                    
+                        
+                                For Windows | <a href="https://stage.gamecreation.org/games/flip-flop/FlipFlop.zip">Download</a><br>
+                        
+                    
+                </p>
+                
+                
+            </div>
+        
+        <div class="game-content-section col-md-4 col-sm-6 col-12">
+            <!-- Project Members -->
+            <h2>Project Members</h2>
+            
+            <p>
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/WoodyMcCoy</p> -->
+                    
+                        <a href="../members/WoodyMcCoy.html">Woody McCoy</a> - <i>Team Lead</i><br>
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/SebastianYang</p> -->
+                    
+                        <a href="../members/SebastianYang.html">Sebastian Yang</a> - <i>Programming</i><br>
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/MckennaBrown</p> -->
+                    
+                        
+                            Mckenna Brown - <i>Programming</i><br>
+                        
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/RyanPo</p> -->
+                    
+                        
+                            Ryan Po - <i>Programming</i><br>
+                        
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/ClairePeck</p> -->
+                    
+                        <a href="../members/ClairePeck.html">Claire Peck</a> - <i>Sound and Music</i><br>
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/JonathanFischer</p> -->
+                    
+                        <a href="../members/JonathanFischer.html">Jonathan Fischer</a> - <i>Sound and Music</i><br>
+                    
+                
+            </p>
+        </div>
+    </div>
+
+    <!-- Screenshots -->
+    
+    <div class="row no-margin">
+        <div class="col">
+            <h2>Screenshots</h2>
+        </div>
+    </div>
+    <div class="screenshot-row">
+        
+        <div class="screenshot-column">
+            
+            
+                <a href="https://stage.gamecreation.org/games/flip-flop/images/title.png" class="js-smartPhoto" data-caption="Flip Flop" data-id="1" data-group="game">
+                    <img class="screenshot-thumbnail hover-shadow" src="https://stage.gamecreation.org/games/flip-flop/images/title.png"  loading="lazy"/>
+            
+            </a>
+        </div>
+        
+        <div class="screenshot-column">
+            
+            
+                <a href="https://stage.gamecreation.org/games/flip-flop/images/screenshot1.png" class="js-smartPhoto" data-caption="Flip Flop" data-id="2" data-group="game">
+                    <img class="screenshot-thumbnail hover-shadow" src="https://stage.gamecreation.org/games/flip-flop/images/screenshot1.png"  loading="lazy"/>
+            
+            </a>
+        </div>
+        
+        <div class="screenshot-column">
+            
+            
+                <a href="https://stage.gamecreation.org/games/flip-flop/images/screenshot2.PNG" class="js-smartPhoto" data-caption="Flip Flop" data-id="3" data-group="game">
+                    <img class="screenshot-thumbnail hover-shadow" src="https://stage.gamecreation.org/games/flip-flop/images/screenshot2.PNG"  loading="lazy"/>
+            
+            </a>
+        </div>
+        
+        <div class="screenshot-column">
+            
+            
+                <a href="https://stage.gamecreation.org/games/flip-flop/images/screenshot3.PNG" class="js-smartPhoto" data-caption="Flip Flop" data-id="4" data-group="game">
+                    <img class="screenshot-thumbnail hover-shadow" src="https://stage.gamecreation.org/games/flip-flop/images/screenshot3.PNG"  loading="lazy"/>
+            
+            </a>
+        </div>
+        
+        <div class="screenshot-column">
+            
+            
+                <a href="https://stage.gamecreation.org/games/flip-flop/images/screenshot4.PNG" class="js-smartPhoto" data-caption="Flip Flop" data-id="5" data-group="game">
+                    <img class="screenshot-thumbnail hover-shadow" src="https://stage.gamecreation.org/games/flip-flop/images/screenshot4.PNG"  loading="lazy"/>
+            
+            </a>
+        </div>
+        
+        <div class="screenshot-column">
+            
+            
+                <a href="https://stage.gamecreation.org/games/flip-flop/images/screenshot5.PNG" class="js-smartPhoto" data-caption="Flip Flop" data-id="6" data-group="game">
+                    <img class="screenshot-thumbnail hover-shadow" src="https://stage.gamecreation.org/games/flip-flop/images/screenshot5.PNG"  loading="lazy"/>
+            
+            </a>
+        </div>
+        
+    </div>
+    
+
+    <!-- Original Soundtrack Soundcloud embed -->
+    
+    <div class="row no-margin">
+        <div class="col-xl-5 col-lg-6 col-md-7 col-sm-9 col-12">
+            <h2>Original Soundtrack</h2>
+            <iframe class="soundcloud-embed" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/771064098&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+        </div>
+    </div>
+    
+
+    <!-- Gameplay videos -->
+    
+
+    <!-- Custom content (this could be moved up?) -->
+    
+</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<!-- Common page footer -->
+<div class="container-fluid">
+    <footer id="page-footer">
+        <div class="footer-copyright text-center py-3">
+            
+            ©2025 CMU Game Creation Society<br>
+            &nbsp; &nbsp;
+            <a class="footer-link" href="../about.html">About</a>
+            <a class="footer-link" href="../FAQ.html">FAQ</a>
+            <a class="footer-link" href="../contact.html">Contact</a>
+            <br>
+            <a href="https://www.facebook.com/groups/cmugcs/"><i class="fab fa-facebook"></i></a>
+            <a href="https://discord.gg/Hfs9bfY"><i class="fab fa-discord"></i></a>
+            <a href="https://lists.andrew.cmu.edu/mailman/listinfo/game-creation"><i class="fas fa-envelope"></i></a>
+            <a href="https://calendar.google.com/calendar/embed?src=andrew.cmu.edu_81nu9se1dvr891bdcfjo9ndovk%40group.calendar.google.com&amp;ctz=America%2FNew_York"><i class="fas fa-calendar"></i></a>
+        </div>
+        <br>
+    </footer>
+</div>
+
+
+
+
+	<!-- Script dependencies -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+	<script src="../scripts/header.js"></script>
+</body>
+
+<!-- Mirrored from www.gamecreation.org/games/flip_flop by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Jan 2026 12:36:50 GMT -->
+</html>

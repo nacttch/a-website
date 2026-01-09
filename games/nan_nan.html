@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.gamecreation.org/games/nan_nan by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Jan 2026 12:36:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<!-- Non-required, but good meta tags -->
+	<meta name="author" content="Game Creation Society">
+	
+		<meta name="description" content="Nan Nan is a 2D puzzle RPG game combining northern Chinese Folktales and cosmic horror to create a uniquely unsettling experience. The game uses nonlinear narratives to tell the life story of a ten-year-old girl, Nannan, and how she fights for a new life by solving the mystery of her hometown. From time looping to turn-based battle systems, the game uses a variety of gameplay mechanics and art styles to investigate questions of gender inequality, cultural values and religion.">
+		<meta property="og:description" content="Nan Nan is a 2D puzzle RPG game combining northern Chinese Folktales and cosmic horror to create a uniquely unsettling experience. The game uses nonlinear narratives to tell the life story of a ten-year-old girl, Nannan, and how she fights for a new life by solving the mystery of her hometown. From time looping to turn-based battle systems, the game uses a variety of gameplay mechanics and art styles to investigate questions of gender inequality, cultural values and religion.">
+	
+	<meta name="keywords" content="game, games, game creation, gamemaking, game making, unity, unreal, student, students, college, cmu, carnegie mellon, carnegie mellon university, game creation society, gcs">
+	<meta name="theme-color" content="#b12d36">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="nan_nan.html">
+	
+		<meta property="og:image" content="https://stage.gamecreation.org/nan-nan/images/title.png">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131154366-1"></script>
+	<script src="../scripts/analytics.js"></script>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/vnd.microsoft.icon">
+	<!-- Web app menifest -->
+	<link rel="manifest" href="../manifest.webmanifest">
+	<!-- Apple touchscreen icon -->
+	<link rel="apple-touch-icon" href="../images/scope_creep/mask512x512.png">
+	<!-- Stylesheet dependencies -->
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/fonts.css">
+	<!-- Title -->
+	<title>Nan Nan | Game Creation Society</title>
+	<meta property="og:title" content="Nan Nan | Game Creation Society">
+</head>
+
+<body>
+	<!-- Preloader -->
+	<script src="../scripts/preloader.js"></script>
+
+	<!-- Header -->
+	<!-- import the image converter -->
+<script type="text/javascript" src="../scripts/img-converter.js"></script>
+
+<!-- Common page header -->
+<div id="page-header" class="fixed-top at-top">
+    <!-- Logo -->
+    <a href="../index.html">
+        <img id="header-img" class="replaceable" src="../images/webp/official_no_back_white_smaller.webp" alt="GCS Logo" onerror="this.src='../images/official_no_back_white_smaller.png';" loading="lazy">
+    </a>
+
+    <!--a id="faq-link" href="/FAQ"></a-->
+
+    <!-- https://stackoverflow.com/a/21919261 -->
+    <input type="checkbox" id="hacky-input" style="display:none;">
+    <label for="hacky-input" style="display:inline;margin-bottom:0;">
+        <div id="header-scope-creep-container">
+            <img id="header-scope-creep" src="../images/scope_creep/ScopeCreepIdle2.gif" alt="Scope Creep" loading="lazy">
+        </div>
+    </label>
+
+        <!-- 
+            The style for this is at header-scope-creep in main.css. 
+            If you make this a link again, you should uncomment that style.
+        -->
+
+         <!--video id="header-scope-creep" autoplay>
+          <source src="images/scope_creep/ScopeCreepIdle2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video--> 
+
+        <!--video id="header-scope-creep" autoplay loop>
+            <source src="images/scope_creep/ScopeCreepIdle2.webm" type="video/webm">
+        </video>
+    </a-->
+
+    <!-- Nav bar -->
+    <nav id="nav-bar">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link button " href="../index.html">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../about.html">
+                    About
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../FAQ.html">
+                    FAQ
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../games.html">
+                    Games
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../members.html">
+                    Members
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../course.html">
+                    Learning
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../contact.html">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!--
+<script>
+    convert("/images/scope_creep/ScopeCreepIdle2", "Scope Creep", "header-scope-creep", "header-scope-creep-container");
+</script>
+-->
+
+
+	<!-- Some logic for header-sized-top-margin conditions -->
+	
+	
+	<div class="container-fluid ">
+		<div class="row">
+			<!-- Content -->
+			<div class="col-12" id="main-content">
+				<!-- Stylesheet dependencies -->
+<link rel="stylesheet" href="../styles/game-page.css">
+<link rel="stylesheet" href="../styles/smartphoto.min.css">
+<script src="../scripts/smartphoto.min.js"></script>
+<script>
+window.addEventListener('DOMContentLoaded',function(){
+    var sp = new SmartPhoto(".js-smartPhoto");
+    sp.on('open',function(){
+        var th = document.getElementById('page-header');
+        th.style.visibility = "hidden";
+    });
+    sp.on('close',function(){
+        var th = document.getElementById('page-header');
+        th.style.visibility = "visible";
+    });
+});
+</script>
+
+<!-- Top image -->
+<div id="game-top-container">
+    
+    <div id="game-tags-container">
+        <p id="game-tags">
+            
+                
+                    Windows
+                
+            
+                
+                    <br>Mac
+                
+            
+                
+                    <br>Linux
+                
+            
+                
+                    <br>Web
+                
+            
+                
+                    <br>Singleplayer
+                
+            
+                
+                    <br>Unity
+                
+            
+                
+                    <br>Horror
+                
+            
+                
+                    <br>Puzzle
+                
+            
+        </p>
+    </div>
+    
+
+    
+    <div id="game-awards-container">
+        <p id="game-awards">
+            
+                
+                    Best Art
+                
+            
+        </p>
+    </div>
+    
+
+    
+    <img id="game-top-img" src="https://stage.gamecreation.org/games/nan-nan/images/title.png" style="object-fit:cover" loading="lazy">
+</div>
+
+<!-- Page content -->
+<div id="game-main-content">
+    <!-- Title and year/semester -->
+    <div class="row no-margin">
+        <div class="col">
+            <h1 class="inline">Nan Nan</h1><h3 class="inline"> - Fall 2022</h3>
+        </div>
+    </div>
+
+    <div class="row no-margin">
+        
+        <div class="game-content-section col-md-4 col-sm-6 col-12">
+            <!-- About -->
+            <h2>About</h2>
+            <p>Nan Nan is a 2D puzzle RPG game combining northern Chinese Folktales and cosmic horror to create a uniquely unsettling experience. The game uses nonlinear narratives to tell the life story of a ten-year-old girl, Nannan, and how she fights for a new life by solving the mystery of her hometown. From time looping to turn-based battle systems, the game uses a variety of gameplay mechanics and art styles to investigate questions of gender inequality, cultural values and religion.</p>
+        </div>
+        
+            <div class="game-content-section col-md-4 col-sm-6 col-12">
+                <!-- Builds -->
+                <h2>Play</h2>
+                <p>
+                    
+                        
+                                For Windows | <a href="https://stage.gamecreation.org/games/nan-nan/Nannan GCS build.zip">Download</a><br>
+                        
+                    
+                        
+                                For Mac | <a href="https://stage.gamecreation.org/games/nan-nan/Nannan GCS build.zip">Download</a><br>
+                        
+                    
+                        
+                                For Linux | <a href="https://stage.gamecreation.org/games/nan-nan/Nannan GCS build.zip">Download</a><br>
+                        
+                    
+                        
+                                For Web | <a href="https://stage.gamecreation.org/games/nan-nan/Nannan GCS build Web.zip">Play</a><br>
+                            <!-- "Web HTML" denotes a game that is hosted on the site, but isn't WebGL and has its own dedicated HTML page (i.e., Reverse No). The argument specified must be the name of the HTML file present in the play folder in the root-level directory of the repo. -->
+                            
+                    
+                </p>
+                
+                
+            </div>
+        
+        <div class="game-content-section col-md-4 col-sm-6 col-12">
+            <!-- Project Members -->
+            <h2>Project Members</h2>
+            
+            <p>
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/LelaYuan</p> -->
+                    
+                        <a href="../members/LelaYuan.html">Lela Yuan</a> - <i>Team Lead, Lead Producer, UI Designer</i><br>
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/AudreyRenouf</p> -->
+                    
+                        <a href="../members/AudreyRenouf.html">Audrey Renouf</a> - <i>Art, Lead Producer</i><br>
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/JadeWang</p> -->
+                    
+                        <a href="../members/JadeWang.html">Jade Wang</a> - <i>Art</i><br>
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/KaitlynLiu</p> -->
+                    
+                        <a href="../members/KaitlynLiu.html">Kaitlyn Liu</a> - <i>Programming</i><br>
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/CharviHoysal</p> -->
+                    
+                        
+                            Charvi Hoysal - <i>Programming</i><br>
+                        
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/EmilyGuo</p> -->
+                    
+                        <a href="../members/EmilyGuo.html">Emily Guo</a> - <i>Programming</i><br>
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/MeganXu</p> -->
+                    
+                        <a href="../members/MeganXu.html">Megan Xu</a> - <i>Art</i><br>
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/KellyZheng</p> -->
+                    
+                        <a href="../members/KellyZheng.html">Kelly Zheng</a> - <i>Art</i><br>
+                    
+                
+                    
+                    
+                    
+                    
+
+                    <!-- Removes numeric characters (the member name ID). Please replace this if they ever add a better filter for removing numbers...-->
+                    
+                    
+                    <!-- <p>member match string: /members/ClytieQiu</p> -->
+                    
+                        <a href="../members/ClytieQiu.html">Clytie Qiu</a> - <i>Programming, Mandarin Translator</i><br>
+                    
+                
+            </p>
+        </div>
+    </div>
+
+    <!-- Screenshots -->
+    
+    <div class="row no-margin">
+        <div class="col">
+            <h2>Screenshots</h2>
+        </div>
+    </div>
+    <div class="screenshot-row">
+        
+        <div class="screenshot-column">
+            
+            
+                <a href="https://stage.gamecreation.org/games/nan-nan/images/img1.png" class="js-smartPhoto" data-caption="Nan Nan" data-id="1" data-group="game">
+                    <img class="screenshot-thumbnail hover-shadow" src="https://stage.gamecreation.org/games/nan-nan/images/img1.png"  loading="lazy"/>
+            
+            </a>
+        </div>
+        
+        <div class="screenshot-column">
+            
+            
+                <a href="https://stage.gamecreation.org/games/nan-nan/images/img2.png" class="js-smartPhoto" data-caption="Nan Nan" data-id="2" data-group="game">
+                    <img class="screenshot-thumbnail hover-shadow" src="https://stage.gamecreation.org/games/nan-nan/images/img2.png"  loading="lazy"/>
+            
+            </a>
+        </div>
+        
+        <div class="screenshot-column">
+            
+            
+                <a href="https://stage.gamecreation.org/games/nan-nan/images/img3.png" class="js-smartPhoto" data-caption="Nan Nan" data-id="3" data-group="game">
+                    <img class="screenshot-thumbnail hover-shadow" src="https://stage.gamecreation.org/games/nan-nan/images/img3.png"  loading="lazy"/>
+            
+            </a>
+        </div>
+        
+        <div class="screenshot-column">
+            
+            
+                <a href="https://stage.gamecreation.org/games/nan-nan/images/img4.png" class="js-smartPhoto" data-caption="Nan Nan" data-id="4" data-group="game">
+                    <img class="screenshot-thumbnail hover-shadow" src="https://stage.gamecreation.org/games/nan-nan/images/img4.png"  loading="lazy"/>
+            
+            </a>
+        </div>
+        
+        <div class="screenshot-column">
+            
+            
+                <a href="https://stage.gamecreation.org/games/nan-nan/images/img5.png" class="js-smartPhoto" data-caption="Nan Nan" data-id="5" data-group="game">
+                    <img class="screenshot-thumbnail hover-shadow" src="https://stage.gamecreation.org/games/nan-nan/images/img5.png"  loading="lazy"/>
+            
+            </a>
+        </div>
+        
+        <div class="screenshot-column">
+            
+            
+                <a href="https://stage.gamecreation.org/games/nan-nan/images/img6.png" class="js-smartPhoto" data-caption="Nan Nan" data-id="6" data-group="game">
+                    <img class="screenshot-thumbnail hover-shadow" src="https://stage.gamecreation.org/games/nan-nan/images/img6.png"  loading="lazy"/>
+            
+            </a>
+        </div>
+        
+    </div>
+    
+
+    <!-- Original Soundtrack Soundcloud embed -->
+    
+
+    <!-- Gameplay videos -->
+    
+
+    <!-- Custom content (this could be moved up?) -->
+    
+</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<!-- Common page footer -->
+<div class="container-fluid">
+    <footer id="page-footer">
+        <div class="footer-copyright text-center py-3">
+            
+            ©2025 CMU Game Creation Society<br>
+            &nbsp; &nbsp;
+            <a class="footer-link" href="../about.html">About</a>
+            <a class="footer-link" href="../FAQ.html">FAQ</a>
+            <a class="footer-link" href="../contact.html">Contact</a>
+            <br>
+            <a href="https://www.facebook.com/groups/cmugcs/"><i class="fab fa-facebook"></i></a>
+            <a href="https://discord.gg/Hfs9bfY"><i class="fab fa-discord"></i></a>
+            <a href="https://lists.andrew.cmu.edu/mailman/listinfo/game-creation"><i class="fas fa-envelope"></i></a>
+            <a href="https://calendar.google.com/calendar/embed?src=andrew.cmu.edu_81nu9se1dvr891bdcfjo9ndovk%40group.calendar.google.com&amp;ctz=America%2FNew_York"><i class="fas fa-calendar"></i></a>
+        </div>
+        <br>
+    </footer>
+</div>
+
+
+
+
+	<!-- Script dependencies -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+	<script src="../scripts/header.js"></script>
+</body>
+
+<!-- Mirrored from www.gamecreation.org/games/nan_nan by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Jan 2026 12:36:48 GMT -->
+</html>

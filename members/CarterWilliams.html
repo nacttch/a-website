@@ -1,0 +1,2573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.gamecreation.org/members/CarterWilliams by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Jan 2026 12:37:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<!-- Non-required, but good meta tags -->
+	<meta name="author" content="Game Creation Society">
+	
+		<meta name="description" content="Carter Williams is a game designer and developer who enjoys experimental design, juicy animation and clean code. His favorite games to design are cooperative games that force players to interact in new ways. As a part of making these games, he has developed a networking framework for Unity. In addition to making games, Carter also has a passion for teaching. He has taught courses on game analysis and game development as well as TA'ing courses on functional programming and educational technology.">
+		<meta property="og:description" content="Carter Williams is a game designer and developer who enjoys experimental design, juicy animation and clean code. His favorite games to design are cooperative games that force players to interact in new ways. As a part of making these games, he has developed a networking framework for Unity. In addition to making games, Carter also has a passion for teaching. He has taught courses on game analysis and game development as well as TA'ing courses on functional programming and educational technology.">
+	
+	<meta name="keywords" content="game, games, game creation, gamemaking, game making, unity, unreal, student, students, college, cmu, carnegie mellon, carnegie mellon university, game creation society, gcs">
+	<meta name="theme-color" content="#b12d36">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="CarterWilliams.html">
+	
+		<meta property="og:image" content="https://stage.gamecreation.org/Members/images/CarterWilliams.jpg">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131154366-1"></script>
+	<script src="../scripts/analytics.js"></script>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/vnd.microsoft.icon">
+	<!-- Web app menifest -->
+	<link rel="manifest" href="../manifest.webmanifest">
+	<!-- Apple touchscreen icon -->
+	<link rel="apple-touch-icon" href="../images/scope_creep/mask512x512.png">
+	<!-- Stylesheet dependencies -->
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/fonts.css">
+	<!-- Title -->
+	<title>Carter Williams | Game Creation Society</title>
+	<meta property="og:title" content="Carter Williams | Game Creation Society">
+</head>
+
+<body>
+	<!-- Preloader -->
+	<script src="../scripts/preloader.js"></script>
+
+	<!-- Header -->
+	<!-- import the image converter -->
+<script type="text/javascript" src="../scripts/img-converter.js"></script>
+
+<!-- Common page header -->
+<div id="page-header" class="fixed-top at-top">
+    <!-- Logo -->
+    <a href="../index.html">
+        <img id="header-img" class="replaceable" src="../images/webp/official_no_back_white_smaller.webp" alt="GCS Logo" onerror="this.src='../images/official_no_back_white_smaller.png';" loading="lazy">
+    </a>
+
+    <!--a id="faq-link" href="/FAQ"></a-->
+
+    <!-- https://stackoverflow.com/a/21919261 -->
+    <input type="checkbox" id="hacky-input" style="display:none;">
+    <label for="hacky-input" style="display:inline;margin-bottom:0;">
+        <div id="header-scope-creep-container">
+            <img id="header-scope-creep" src="../images/scope_creep/ScopeCreepIdle2.gif" alt="Scope Creep" loading="lazy">
+        </div>
+    </label>
+
+        <!-- 
+            The style for this is at header-scope-creep in main.css. 
+            If you make this a link again, you should uncomment that style.
+        -->
+
+         <!--video id="header-scope-creep" autoplay>
+          <source src="images/scope_creep/ScopeCreepIdle2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video--> 
+
+        <!--video id="header-scope-creep" autoplay loop>
+            <source src="images/scope_creep/ScopeCreepIdle2.webm" type="video/webm">
+        </video>
+    </a-->
+
+    <!-- Nav bar -->
+    <nav id="nav-bar">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link button " href="../index.html">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../about.html">
+                    About
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../FAQ.html">
+                    FAQ
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../games.html">
+                    Games
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../members.html">
+                    Members
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../course.html">
+                    Learning
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button " href="../contact.html">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!--
+<script>
+    convert("/images/scope_creep/ScopeCreepIdle2", "Scope Creep", "header-scope-creep", "header-scope-creep-container");
+</script>
+-->
+
+
+	<!-- Some logic for header-sized-top-margin conditions -->
+	
+	
+	<div class="container-fluid header-sized-top-margin">
+		<div class="row">
+			<!-- Content -->
+			<div class="col-12" id="main-content">
+				<!-- Stylesheet dependencies -->
+<link rel="stylesheet" href="../styles/basic-page.css">
+
+
+<!-- Top image -->
+
+
+<!-- Page content -->
+<div id="basic-main-content">
+<!-- Stylesheet dependencies -->
+<link rel="stylesheet" href="../styles/member-page.css">
+<link rel="stylesheet" href="../styles/listed_game.css">
+
+<!-- Name and class -->
+<br>
+<div class="row no-margin">
+    <div class="col">
+        <h1 class="inline">Carter Williams</h1><h3 class="inline"> - Class of 2020</h3>
+    </div>
+</div>
+
+<div class="row no-margin">
+    <!-- Bio -->
+    
+        
+        <div class="col-md-8">
+            <p>Carter Williams is a game designer and developer who enjoys experimental design, juicy animation and clean code. His favorite games to design are cooperative games that force players to interact in new ways. As a part of making these games, he has developed a networking framework for Unity.<br><br> In addition to making games, Carter also has a passion for teaching. He has taught courses on game analysis and game development as well as TA'ing courses on functional programming and educational technology.</p>
+        </div>
+        
+    
+
+    <!-- Profile picture -->
+    
+        
+        <div class="col-md-4 text-center">
+            <img class="profile_image" src="https://stage.gamecreation.org/Members/images/CarterWilliams.jpg" alt="Profile Image" loading="lazy">
+        </div>
+        
+    
+</div>
+<br>
+
+<!-- Extra-info container -->
+<div class="row no-margin justify-content-center">
+    <!-- Positions -->
+    
+    <div class="col-md-4 col-sm-12 text-center mb-2">
+
+        <br>
+        
+
+        
+        <h4><u>Previous GCS positions</u>:
+            
+            
+            
+            
+                <br>President
+            
+                <br>Treasurer
+            
+        </h4>
+        
+
+    </div>
+    
+
+    <!-- Personal website link -->
+    
+        <div class="col-md-4 col-sm-12 text-center">
+            
+                <br>
+                <a href="https://ncarterwilliams.com/" class="no-text-decoration">
+                    <button type="button" class="standard-button red-button">My Website</button>
+                </a>
+            
+
+            <!-- In case additional links are included that are too specific for "branding" covered in the social links below; only use this if the site isn't a brand and there's no image for it currently -->
+            
+        </div>
+    
+
+    <!-- Personal contact link -->
+    
+</div>
+
+<!-- Social contact links -->
+
+
+<!-- Custom content -->
+
+
+<!-- My Games -->
+<div class="text-center">
+    <br>
+    <h2>My GCS Games</h2>
+</div>
+
+<div class="row no-margin justify-content-around align-items-center">
+    
+    
+
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Windows_game-tag  Mac_game-tag  Linux_game-tag  Web_game-tag  Singleplayer_game-tag  Unity_game-tag  Game-Jam_game-tag  Puzzle_game-tag 
+
+"
+  id="there-is-a-place-you-are-meant-to-be-you-are-not-there-preview" href="../games/there_is_a_place_you_are_meant_to_be_you_are_not_there.html">
+    <div id="there-is-a-place-you-are-meant-to-be-you-are-not-there-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/there_is_a_place_you_are_meant_to_be_you_are_not_there/images/black_screen.png')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="there-is-a-place-you-are-meant-to-be-you-are-not-there_hover_preload" src="https://stage.gamecreation.org/games/there_is_a_place_you_are_meant_to_be_you_are_not_there/images/black_screen.png"></div>
+    
+    <div id="ThereIsaPlaceYouAreMeanttoBe...YouAreNotThere_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>There Is a Place You Are Meant to Be... You Are Not There</strong></h5>
+        <p class="game_semester_year">Winter 2021</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Scott King</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">A purely auditory experience about being lost and finding your way. Headphones and a mouse are required.Made for Global Game Jam 2021.</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("there-is-a-place-you-are-meant-to-be-you-are-not-there-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("there-is-a-place-you-are-meant-to-be-you-are-not-there_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("there-is-a-place-you-are-meant-to-be-you-are-not-there-preview-child").style="background-image: url('https://stage.gamecreation.org/games/there_is_a_place_you_are_meant_to_be_you_are_not_there/images/black_screen.png')";
+                /*var css = '#there-is-a-place-you-are-meant-to-be-you-are-not-there-preview:hover .listed-game-preview-img';
+                document.getElementById("there-is-a-place-you-are-meant-to-be-you-are-not-there-preview").style="background-image: url('https://stage.gamecreation.org/games/there_is_a_place_you_are_meant_to_be_you_are_not_there/images/black_screen.png')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/there_is_a_place_you_are_meant_to_be_you_are_not_there/images/black_screen.png"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #there-is-a-place-you-are-meant-to-be-you-are-not-there-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/there_is_a_place_you_are_meant_to_be_you_are_not_there/images/black_screen.png") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Windows_game-tag  Mac_game-tag  Singleplayer_game-tag  Game-Jam_game-tag  Unity_game-tag  Horror_game-tag 
+
+"
+  id="static-preview" href="../games/static.html">
+    <div id="static-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/static/images/Static_TV.png')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="static_hover_preload" src="https://stage.gamecreation.org/games/static/images/Static_Jam_Badge.png"></div>
+    
+    <div id="Static_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>Static</strong></h5>
+        <p class="game_semester_year">Fall 2020</p>
+        
+            <p class="game_members" style="display:none">George Whitfield</p>
+        
+            <p class="game_members" style="display:none">Dominic Calkosz</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Joseph Perrino</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">A short horror game set in a TV shop. Created for the Bit Bridge Halloween Jam 2020. Itch.io page Jam page</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("static-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("static_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("static-preview-child").style="background-image: url('https://stage.gamecreation.org/games/static/images/Static_TV.png')";
+                /*var css = '#static-preview:hover .listed-game-preview-img';
+                document.getElementById("static-preview").style="background-image: url('https://stage.gamecreation.org/games/static/images/Static_Jam_Badge.png')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/static/images/Static_Jam_Badge.png"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #static-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/static/images/Static_Jam_Badge.png") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+        
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Web_game-tag  Singleplayer_game-tag  Unity_game-tag  Puzzle_game-tag 
+
+"
+  id="implicitus-preview" href="../games/implicitus.html">
+    <div id="implicitus-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/implicitus/images/Logo 3 export-01.png')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="implicitus_hover_preload" src="https://stage.gamecreation.org/games/implicitus/images/implic4.png"></div>
+    
+    <div id="Implicitus_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>Implicitus</strong></h5>
+        <p class="game_semester_year">Spring 2020</p>
+        
+            <p class="game_members" style="display:none">Anthony Meza</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Dominic Calkosz</p>
+        
+            <p class="game_members" style="display:none">Tiger Jia</p>
+        
+            <p class="game_members" style="display:none">Grace Liu</p>
+        
+            <p class="game_members" style="display:none">Catherine Wang</p>
+        
+            <p class="game_members" style="display:none">Chelsea Liu 1</p>
+        
+            <p class="game_members" style="display:none">Grace Li</p>
+        
+            <p class="game_members" style="display:none">Jeremia Lo</p>
+        
+            <p class="game_members" style="display:none">Katherine Wang</p>
+        
+            <p class="game_members" style="display:none">Milo Tayao</p>
+        
+            <p class="game_members" style="display:none">Natalie Tedeschi</p>
+        
+            <p class="game_members" style="display:none">Nicole Yu</p>
+        
+            <p class="game_members" style="display:none">Kyle Leve</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">An abstract puzzle game that will bend your brain. Combine spells and unravel the properties of combinatory logic.</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("implicitus-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("implicitus_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("implicitus-preview-child").style="background-image: url('https://stage.gamecreation.org/games/implicitus/images/Logo 3 export-01.png')";
+                /*var css = '#implicitus-preview:hover .listed-game-preview-img';
+                document.getElementById("implicitus-preview").style="background-image: url('https://stage.gamecreation.org/games/implicitus/images/implic4.png')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/implicitus/images/implic4.png"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #implicitus-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/implicitus/images/implic4.png") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Windows_game-tag  Multiplayer_game-tag  Game-Jam_game-tag  Controller-Compatible_game-tag  Unity_game-tag  Party_game-tag 
+
+"
+  id="construction-derby-preview" href="../games/construction-derby.html">
+    <div id="construction-derby-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/construction-derby/images/image2.png')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="construction-derby_hover_preload" src="https://stage.gamecreation.org/games/construction-derby/images/image1.png"></div>
+    
+    <div id="ConstructionDerby_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>Construction Derby</strong></h5>
+        <p class="game_semester_year">Winter 2020</p>
+        
+            <p class="game_members" style="display:none">Malek Anabtawi</p>
+        
+            <p class="game_members" style="display:none">Dominic Calkosz</p>
+        
+            <p class="game_members" style="display:none">Thomas Carey</p>
+        
+            <p class="game_members" style="display:none">Jonathan Fischer</p>
+        
+            <p class="game_members" style="display:none">Tiger Jia</p>
+        
+            <p class="game_members" style="display:none">Adrian Mester</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">When the world is ravaged by nuclear fallout, there is only one way to repair things...by destroying something first! Participate in the grand Construction Derby where you destroy your opponent’s cars while simultaneously repairing and improving your own. Be careful, as the hosts of this competition are not privy to fair play, and many brutal traps await those who enter. Keep fighting and be the last one left driving! Achieve glory as you smash your friend's vehicles to bits and add them to your own!</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("construction-derby-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("construction-derby_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("construction-derby-preview-child").style="background-image: url('https://stage.gamecreation.org/games/construction-derby/images/image2.png')";
+                /*var css = '#construction-derby-preview:hover .listed-game-preview-img';
+                document.getElementById("construction-derby-preview").style="background-image: url('https://stage.gamecreation.org/games/construction-derby/images/image1.png')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/construction-derby/images/image1.png"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #construction-derby-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/construction-derby/images/image1.png") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Windows_game-tag  Multiplayer_game-tag  Controller-Compatible_game-tag 
+
+"
+  id="grassfeet-preview" href="../games/grassfeet.html">
+    <div id="grassfeet-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/grassfeet/images/screenshot3.png')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="grassfeet_hover_preload" src="https://stage.gamecreation.org/games/grassfeet/images/screenshot3.png"></div>
+    
+    <div id="Grassfeet_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>Grassfeet</strong></h5>
+        <p class="game_semester_year">Fall 2019</p>
+        
+            <p class="game_members" style="display:none">Peter Sheehan</p>
+        
+            <p class="game_members" style="display:none">Chris Fan</p>
+        
+            <p class="game_members" style="display:none">Sam Murray</p>
+        
+            <p class="game_members" style="display:none">Sanjay Salem</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Sheenu You</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">Grassfeet is a space-filling game where the players cooperate to cover a planet with grass while grass-eating cows impede their progress. Work together, ride cows, and fill the world with grass as fast as you can!</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("grassfeet-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("grassfeet_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("grassfeet-preview-child").style="background-image: url('https://stage.gamecreation.org/games/grassfeet/images/screenshot3.png')";
+                /*var css = '#grassfeet-preview:hover .listed-game-preview-img';
+                document.getElementById("grassfeet-preview").style="background-image: url('https://stage.gamecreation.org/games/grassfeet/images/screenshot3.png')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/grassfeet/images/screenshot3.png"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #grassfeet-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/grassfeet/images/screenshot3.png") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Web_game-tag  Board_game-tag  Multiplayer_game-tag  Game-Jam_game-tag 
+ Honorable Mention_award-tag 
+ Award-Winning_award-tag "
+  id="reverse-no-preview" href="../games/reverse_no.html">
+    <div id="reverse-no-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/reverse-no/images/ReverseNoTitle.jpg')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="reverse-no_hover_preload" src="https://stage.gamecreation.org/games/reverse-no/images/ReverseNo1.jpg"></div>
+    
+    <div id="ReverseNo_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>Reverse No</strong></h5>
+        <p class="game_semester_year">Fall 2019</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Joseph Perrino</p>
+        
+            <p class="game_members" style="display:none">Adrian Mester</p>
+        
+            <p class="game_members" style="display:none">Woody McCoy</p>
+        
+            <p class="game_members" style="display:none">Tiger Jia</p>
+        
+            <p class="game_members" style="display:none">Dominic Calkosz</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">Reverse No is a cooperative party game about communicating ideas with a limited vocabulary, and building up your common language over time. It can be played with two or more players.  This game was created at the 2019 Pittsburgh IGDA Board Game Jam, for the theme: Foreign.</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("reverse-no-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("reverse-no_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("reverse-no-preview-child").style="background-image: url('https://stage.gamecreation.org/games/reverse-no/images/ReverseNoTitle.jpg')";
+                /*var css = '#reverse-no-preview:hover .listed-game-preview-img';
+                document.getElementById("reverse-no-preview").style="background-image: url('https://stage.gamecreation.org/games/reverse-no/images/ReverseNo1.jpg')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/reverse-no/images/ReverseNo1.jpg"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #reverse-no-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/reverse-no/images/ReverseNo1.jpg") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Windows_game-tag  Singleplayer_game-tag  Game-Jam_game-tag  Unity_game-tag 
+
+"
+  id="void-preview" href="../games/void.html">
+    <div id="void-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/void/images/shop_keep_pic.png')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="void_hover_preload" src="https://stage.gamecreation.org/games/void/images/slot_pic.png"></div>
+    
+    <div id="VOID_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>VOID</strong></h5>
+        <p class="game_semester_year">Fall 2019</p>
+        
+            <p class="game_members" style="display:none">Adrian Mester</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Grace Liu</p>
+        
+            <p class="game_members" style="display:none">Jonathan Fischer</p>
+        
+            <p class="game_members" style="display:none">Malek Anabtawi</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">Start with nothing.</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("void-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("void_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("void-preview-child").style="background-image: url('https://stage.gamecreation.org/games/void/images/shop_keep_pic.png')";
+                /*var css = '#void-preview:hover .listed-game-preview-img';
+                document.getElementById("void-preview").style="background-image: url('https://stage.gamecreation.org/games/void/images/slot_pic.png')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/void/images/slot_pic.png"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #void-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/void/images/slot_pic.png") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Board_game-tag  Multiplayer_game-tag  Game-Jam_game-tag 
+
+"
+  id="a-touching-conversation-preview" href="../games/a_touching_conversation.html">
+    <div id="a-touching-conversation-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/a-touching-conversation/images/touching-convo-banner.jpg')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="a-touching-conversation_hover_preload" src="https://stage.gamecreation.org/games/a-touching-conversation/images/touching-convo3.jpg"></div>
+    
+    <div id="ATouchingConversation_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>A Touching Conversation</strong></h5>
+        <p class="game_semester_year">Spring 2019</p>
+        
+            <p class="game_members" style="display:none">Grace Liu</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Adrian Mester</p>
+        
+            <p class="game_members" style="display:none">Joseph Perrino</p>
+        
+            <p class="game_members" style="display:none">Dominic Calkosz</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">A conversation game about touch. After filling out a preliminary survey, players on either side of the wall place their hands into the box. They will then be prompted with charades style questions based on the comfort level inferred from the survey. Players must attempt to communicate complex ideas using only their hands.This game was created for Carson's Intro to Contextual Practice at CMU.</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("a-touching-conversation-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("a-touching-conversation_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("a-touching-conversation-preview-child").style="background-image: url('https://stage.gamecreation.org/games/a-touching-conversation/images/touching-convo-banner.jpg')";
+                /*var css = '#a-touching-conversation-preview:hover .listed-game-preview-img';
+                document.getElementById("a-touching-conversation-preview").style="background-image: url('https://stage.gamecreation.org/games/a-touching-conversation/images/touching-convo3.jpg')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/a-touching-conversation/images/touching-convo3.jpg"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #a-touching-conversation-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/a-touching-conversation/images/touching-convo3.jpg") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Windows_game-tag  Mac_game-tag  Singleplayer_game-tag  Roguelike_game-tag 
+
+"
+  id="the-medium-a-slay-the-spire-mod-preview" href="../games/the_medium.html">
+    <div id="the-medium-a-slay-the-spire-mod-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/the-medium/images/splash_art_new.jpg')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="the-medium-a-slay-the-spire-mod_hover_preload" src="https://stage.gamecreation.org/games/the-medium/images/card_art1.png"></div>
+    
+    <div id="TheMedium-ASlaytheSpireMod_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>The Medium - A Slay the Spire Mod</strong></h5>
+        <p class="game_semester_year">Spring 2019</p>
+        
+            <p class="game_members" style="display:none">Adrian Mester</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Dominic Calkosz</p>
+        
+            <p class="game_members" style="display:none">Tiger Jia</p>
+        
+            <p class="game_members" style="display:none">Joseph Perrino</p>
+        
+            <p class="game_members" style="display:none">Grace Liu</p>
+        
+            <p class="game_members" style="display:none">Eileen Lee</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">Explore the duality of humanity and spiritualism as you climb The Spire, building a deck of unique cards in a quest to slay the Heart.  The Medium is a mod for an existing game called Slay the Spire.</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("the-medium-a-slay-the-spire-mod-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("the-medium-a-slay-the-spire-mod_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("the-medium-a-slay-the-spire-mod-preview-child").style="background-image: url('https://stage.gamecreation.org/games/the-medium/images/splash_art_new.jpg')";
+                /*var css = '#the-medium-a-slay-the-spire-mod-preview:hover .listed-game-preview-img';
+                document.getElementById("the-medium-a-slay-the-spire-mod-preview").style="background-image: url('https://stage.gamecreation.org/games/the-medium/images/card_art1.png')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/the-medium/images/card_art1.png"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #the-medium-a-slay-the-spire-mod-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/the-medium/images/card_art1.png") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Windows_game-tag  Singleplayer_game-tag  Game-Jam_game-tag  Unity_game-tag 
+
+"
+  id="kodak-preview" href="../games/kodak.html">
+    <div id="kodak-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/kodak/images/kodakthumbnail.png')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="kodak_hover_preload" src="https://stage.gamecreation.org/games/kodak/images/screenshot_2.png"></div>
+    
+    <div id="Kodak_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>Kodak</strong></h5>
+        <p class="game_semester_year">Winter 2019</p>
+        
+            <p class="game_members" style="display:none">Jan Orlowski</p>
+        
+            <p class="game_members" style="display:none">Jessica (Jess) Cao</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Sophia Videva</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">Your mother passed away recently. You go back to your childhood home to gather her pictures and remember fond childhood memories. However, memories aren’t always accurate, and your past may be much more complicated than you recall...  Created for the Global Game Jam 2019.</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("kodak-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("kodak_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("kodak-preview-child").style="background-image: url('https://stage.gamecreation.org/games/kodak/images/kodakthumbnail.png')";
+                /*var css = '#kodak-preview:hover .listed-game-preview-img';
+                document.getElementById("kodak-preview").style="background-image: url('https://stage.gamecreation.org/games/kodak/images/screenshot_2.png')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/kodak/images/screenshot_2.png"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #kodak-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/kodak/images/screenshot_2.png") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+    
+        
+        
+        
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Board_game-tag  Multiplayer_game-tag  Game-Jam_game-tag  RPG_game-tag 
+ Best Theming_award-tag  Most Creative Use of Materials_award-tag 
+ Award-Winning_award-tag "
+  id="backside-breakout-preview" href="../games/backside_breakout.html">
+    <div id="backside-breakout-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/backside-breakout/images/backside-breakout2.jpg')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="backside-breakout_hover_preload" src="https://stage.gamecreation.org/games/backside-breakout/images/backside-breakout2.jpg"></div>
+    
+    <div id="BacksideBreakout_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>Backside Breakout</strong></h5>
+        <p class="game_semester_year">Fall 2018</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Tomas San Miguel</p>
+        
+            <p class="game_members" style="display:none">Adrian Mester</p>
+        
+            <p class="game_members" style="display:none">Tiger Jia</p>
+        
+            <p class="game_members" style="display:none">Dominic Calkosz</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">Backside Breakout is a prison break role-playing game. Gameplay is turn based with multiple turns a day before players have to move back to their cells and lose any items not properly hidden. The most convenient place to stash items is in one's rectum, hence the title Backside Breakout. The game is won by fulfilling one of three different escape routes, possibly involving bribery, disguises, or a copious amount of spoons.  This game was created at the 2018 Pittsburgh IGDA Board Game Jam, for the theme: Freedom.</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("backside-breakout-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("backside-breakout_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("backside-breakout-preview-child").style="background-image: url('https://stage.gamecreation.org/games/backside-breakout/images/backside-breakout2.jpg')";
+                /*var css = '#backside-breakout-preview:hover .listed-game-preview-img';
+                document.getElementById("backside-breakout-preview").style="background-image: url('https://stage.gamecreation.org/games/backside-breakout/images/backside-breakout2.jpg')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/backside-breakout/images/backside-breakout2.jpg"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #backside-breakout-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/backside-breakout/images/backside-breakout2.jpg") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Windows_game-tag  Mac_game-tag  Linux_game-tag  Multiplayer_game-tag  Unity_game-tag 
+ People's Choice Award_award-tag 
+ Award-Winning_award-tag "
+  id="cloak-and-dagger-preview" href="../games/cloak_and_dagger.html">
+    <div id="cloak-and-dagger-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/cloak-and-dagger/images/logo.jpg')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="cloak-and-dagger_hover_preload" src="https://stage.gamecreation.org/games/cloak-and-dagger/images/screenshot5.jpg"></div>
+    
+    <div id="CloakandDagger_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>Cloak and Dagger</strong></h5>
+        <p class="game_semester_year">Fall 2018</p>
+        
+            <p class="game_members" style="display:none">Dominic Calkosz</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Ning Cao</p>
+        
+            <p class="game_members" style="display:none">Tommy Jiang</p>
+        
+            <p class="game_members" style="display:none">Jessica (Jess) Cao</p>
+        
+            <p class="game_members" style="display:none">Jessica Li</p>
+        
+            <p class="game_members" style="display:none">Xiang Luo</p>
+        
+            <p class="game_members" style="display:none">Gabe Whitney</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">A top-down, multiplayer online arena brawler where you are visible only under torchlight. Features multiple game modes, customization options, and playable characters. Play a fast-paced match of King of the Hill, or use your stealth and the element of surprise to be the Last Survivor. Connect with friends online using our AWS server.</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("cloak-and-dagger-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("cloak-and-dagger_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("cloak-and-dagger-preview-child").style="background-image: url('https://stage.gamecreation.org/games/cloak-and-dagger/images/logo.jpg')";
+                /*var css = '#cloak-and-dagger-preview:hover .listed-game-preview-img';
+                document.getElementById("cloak-and-dagger-preview").style="background-image: url('https://stage.gamecreation.org/games/cloak-and-dagger/images/screenshot5.jpg')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/cloak-and-dagger/images/screenshot5.jpg"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #cloak-and-dagger-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/cloak-and-dagger/images/screenshot5.jpg") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Windows_game-tag  Mac_game-tag  Multiplayer_game-tag  Controller-Compatible_game-tag 
+ GCS Gold Award_award-tag 
+ Award-Winning_award-tag "
+  id="binary-star-preview" href="../games/binary_star.html">
+    <div id="binary-star-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/binarystar/images/logo.jpg')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="binary-star_hover_preload" src="https://stage.gamecreation.org/games/binarystar/images/screenshot6.png"></div>
+    
+    <div id="BinaryStar_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>Binary Star</strong></h5>
+        <p class="game_semester_year">Spring 2018</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Dominic Calkosz</p>
+        
+            <p class="game_members" style="display:none">Grace Liu</p>
+        
+            <p class="game_members" style="display:none">Adrian Mester</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">Work with a partner to control your space ship and fight off waves of alien enemies: One player pilots the ship while the other controls the cannons. You will have to upgrade your ship and unlock powerful new abilities in order to take on increasingly challenging waves.</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("binary-star-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("binary-star_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("binary-star-preview-child").style="background-image: url('https://stage.gamecreation.org/games/binarystar/images/logo.jpg')";
+                /*var css = '#binary-star-preview:hover .listed-game-preview-img';
+                document.getElementById("binary-star-preview").style="background-image: url('https://stage.gamecreation.org/games/binarystar/images/screenshot6.png')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/binarystar/images/screenshot6.png"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #binary-star-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/binarystar/images/screenshot6.png") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Windows_game-tag  Mac_game-tag  Linux_game-tag  Multiplayer_game-tag  Controller-Compatible_game-tag  Unity_game-tag 
+
+"
+  id="verto-animo-preview" href="../games/verto_animo.html">
+    <div id="verto-animo-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/vertoanimo/images/Verto_Animo_Poster1.4.png')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="verto-animo_hover_preload" src="https://stage.gamecreation.org/games/vertoanimo/images/sc3.png"></div>
+    
+    <div id="VertoAnimo_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>Verto Animo</strong></h5>
+        <p class="game_semester_year">Fall 2017</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Dominic Calkosz</p>
+        
+            <p class="game_members" style="display:none">Edward Shin</p>
+        
+            <p class="game_members" style="display:none">Adrian Mester</p>
+        
+            <p class="game_members" style="display:none">Phillip lamkin</p>
+        
+            <p class="game_members" style="display:none">Matthew Bofenkamp</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">Verto Animo is a cooperative platformer with a twist: Each player controls the movement of one character and the jumping of the other. Test your patience and your friendships as you work together to complete each challenge.</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("verto-animo-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("verto-animo_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("verto-animo-preview-child").style="background-image: url('https://stage.gamecreation.org/games/vertoanimo/images/Verto_Animo_Poster1.4.png')";
+                /*var css = '#verto-animo-preview:hover .listed-game-preview-img';
+                document.getElementById("verto-animo-preview").style="background-image: url('https://stage.gamecreation.org/games/vertoanimo/images/sc3.png')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/vertoanimo/images/sc3.png"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #verto-animo-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/vertoanimo/images/sc3.png") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+                <!-- Listed game display -->
+
+<!-- First, determine what the hover image should be (if any) -->
+
+
+
+<!-- A macro to toggle the hover image preload system.
+  -- If enabled, it will preload the hover image for each listed game, BUT not apply the hover style until the image has loaded.
+  -- This avoids the thumbnail appearing white when you mouse over it but it hasn't loaded yet.
+  -->
+
+
+<!-- The display itself -->
+<a class="listed-game-preview listed_game ml-1 mr-1
+ Windows_game-tag  Mac_game-tag  Multiplayer_game-tag  Controller-Compatible_game-tag  Unity_game-tag  Arcade_game-tag  Party_game-tag 
+ GCS Gold Award_award-tag 
+ Award-Winning_award-tag "
+  id="tanks-on-planks-preview" href="../games/tanks_on_planks.html">
+    <div id="tanks-on-planks-preview-child" class="listed-game-preview-img"
+    
+        
+            style="background-image: url('https://stage.gamecreation.org/games/tanks_on_planks/images/screenshot1.png')"
+        
+    >
+    </div>
+    
+        <div style="display:none"><img id="tanks-on-planks_hover_preload" src="https://stage.gamecreation.org/games/tanks_on_planks/images/screenshot2.png"></div>
+    
+    <div id="TanksonPlanks_div" class="listed-game-preview-overlay">
+        <h5 class="game_title"><strong>Tanks on Planks</strong></h5>
+        <p class="game_semester_year">Fall 2016</p>
+        
+            <p class="game_members" style="display:none">Jan Orlowski</p>
+        
+            <p class="game_members" style="display:none">Adrian Biagioli</p>
+        
+            <p class="game_members" style="display:none">Cal Lavicka</p>
+        
+            <p class="game_members" style="display:none">Carter Williams</p>
+        
+            <p class="game_members" style="display:none">Kade Stewart</p>
+        
+            <p class="game_members" style="display:none">Ilana Franklin</p>
+        
+            <p class="game_members" style="display:none">Sophia Qin</p>
+        
+        <!-- Stripped-down description that doesn't display (this is for searching) -->
+        <p class="game_description" style="display:none">Fight off waves of aliens while balancing on a plank in this coop multiplayer game for up to 4 people! With keyboard and controller support.</p>
+    </div>
+    
+    <!-- Preload the on-hover screenshot -->
+    <script type="text/javascript">
+        
+            function once_loaded() {
+                document.getElementById("tanks-on-planks-preview-child").classList.add("hover-img-loaded");
+            }
+
+            var img = document.getElementById("tanks-on-planks_hover_preload");
+            if (img.complete) {
+                once_loaded();
+            } else {
+                img.addEventListener('load', once_loaded);
+                img.addEventListener('error', function() {
+                    console.error("failed to load hover image:");
+                    console.error(img);
+                });
+            }
+        
+
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+
+        // Safari 3.0+ "[object HTMLElementConstructor]" 
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+        
+
+        if (isOpera || isSafari || isIE) {
+            
+            
+                document.getElementById("tanks-on-planks-preview-child").style="background-image: url('https://stage.gamecreation.org/games/tanks_on_planks/images/screenshot1.png')";
+                /*var css = '#tanks-on-planks-preview:hover .listed-game-preview-img';
+                document.getElementById("tanks-on-planks-preview").style="background-image: url('https://stage.gamecreation.org/games/tanks_on_planks/images/screenshot2.png')";*/
+            
+        }
+
+        
+        // Preloading
+        /*preload(
+            "https://stage.gamecreation.org/games/tanks_on_planks/images/screenshot2.png"
+        )*/
+
+        
+
+        
+    </script>
+</a>
+
+
+<style>
+    
+    #tanks-on-planks-preview:hover .listed-game-preview-img.hover-img-loaded {
+    
+        
+        
+
+        
+            background-image: url("https://stage.gamecreation.org/games/tanks_on_planks/images/screenshot2.png") !important;
+        
+    }
+</style>
+
+
+                <!-- See listed_game.html for the formatting of each game listed -->
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
+
+<!-- Link back to all members -->
+<div class="row justify-content-center">
+    <div class="col-sm-3 col-6 text-center">
+        <br>
+        <a href="../members.html" class="no-text-decoration">
+            <button type="button" class="thin-button light-red-button">Back to all members</button>
+        </a>
+    </div>
+</div>
+
+
+<p><em>Updated November 15, 2020</em></p>
+
+
+</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<!-- Common page footer -->
+<div class="container-fluid">
+    <footer id="page-footer">
+        <div class="footer-copyright text-center py-3">
+            
+            ©2025 CMU Game Creation Society<br>
+            &nbsp; &nbsp;
+            <a class="footer-link" href="../about.html">About</a>
+            <a class="footer-link" href="../FAQ.html">FAQ</a>
+            <a class="footer-link" href="../contact.html">Contact</a>
+            <br>
+            <a href="https://www.facebook.com/groups/cmugcs/"><i class="fab fa-facebook"></i></a>
+            <a href="https://discord.gg/Hfs9bfY"><i class="fab fa-discord"></i></a>
+            <a href="https://lists.andrew.cmu.edu/mailman/listinfo/game-creation"><i class="fas fa-envelope"></i></a>
+            <a href="https://calendar.google.com/calendar/embed?src=andrew.cmu.edu_81nu9se1dvr891bdcfjo9ndovk%40group.calendar.google.com&amp;ctz=America%2FNew_York"><i class="fas fa-calendar"></i></a>
+        </div>
+        <br>
+    </footer>
+</div>
+
+
+
+
+	<!-- Script dependencies -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+	<script src="../scripts/header.js"></script>
+</body>
+
+<!-- Mirrored from www.gamecreation.org/members/CarterWilliams by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Jan 2026 12:37:03 GMT -->
+</html>

@@ -1,0 +1,67 @@
+/* Basic page (_layouts/basic-page.html) styling */
+
+body {
+	background-color: black;
+}
+
+/* Image at top of page */
+#basic-top-image {
+	display: block;
+	overflow:auto;
+	z-index: 5;
+	position: relative;
+	/* Default image */
+	background: url("../images/jp2/showcase_1_smaller.jp2"), url("../images/webp/showcase_1_smaller.webp"), url("../images/showcase_1_smaller.jpg");
+	background-position: center 55%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#basic-top-title {
+	text-shadow: 2px 2px black;
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
+/* The main content of a basic page */
+#basic-main-content {
+	color: black;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-bottom: 2.5em;
+}
+
+#basic-main-content h1 {
+	color: #BC192F;
+	/* margin-left: -0.3em; */
+	margin-bottom: 0.4em;
+}
+
+#basic-main-content h3 {
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+}
+
+/* Link styling */
+#basic-main-content a {
+	color: #BC192F;
+	text-decoration: none;
+}
+#basic-main-content a:hover {
+	color: #991222;
+	text-decoration: underline;
+}
+#basic-main-content a.black-link {
+	color: #000000;
+	text-decoration: none;
+}
+#basic-main-content a.black-link:hover {
+	text-decoration: underline;
+}
+
+/* Mini-headers, used for Contact page */
+.mini-header {
+	color: #BC192F;
+	font-weight: bold;
+	text-decoration: underline;
+}

@@ -1,0 +1,130 @@
+/* Games page (_layouts/games.html) styling */
+
+/* Image at top of page */
+#games-top-image {
+	display: block;
+	overflow:auto;
+	z-index: 5;
+	position: relative;
+	/* overflow: visible; */
+	/* Default image */
+	background: url("../images/Games_page_head.png");
+	background-position: center 70%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h2, h3, h4 {
+	display: block;
+	width: 100%;
+	margin: 0;
+	margin-top: 0.6em;
+	margin-bottom: 0.2em
+}
+
+#sorted-by, #tag-selector {
+	color: black;
+	vertical-align: middle;
+	width: 100%;
+	margin: 0;
+	padding: 0 0.7em;
+}
+
+#games-top-title {
+	text-shadow: 2px 2px black;
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
+.toggle-group {
+	vertical-align: middle;
+}
+
+#tag-selector label {
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	line-height: 3.0;
+}
+
+/* No games found indicator */
+#bottom_text {
+	color: black;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+/* Sorted by dropdown */
+.dropbtn {
+	background-color: var(--light-blue);
+	color: white;
+	padding: 0.8em;
+	border: none;
+	vertical-align: middle;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 5em;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 0.6em 0.8em;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .dropdown:hover .dropbtn {background-color: var(--dark-blue);} */
+
+.dropdown a .dropbtn:hover {
+	background-color: var(--dark-blue);
+	cursor: pointer;
+}
+
+.current-sort {
+	background-color: var(--green);
+}
+.current-sort:hover {
+	background-color: var(--green) !important;
+	cursor: default !important;
+}
+
+/* Tag filter checkboxes */
+.checkbox-container {
+	display: inline;
+	margin: 0.5em 0.25em;
+
+	border: 1px solid #888;
+	border-radius: 9px;
+	background-color: #f7f7f7;
+	overflow: none;
+}
+
+.filter-box {
+	display: inline;
+	margin: 0.25em 0.25em;
+	padding: 0.8em;
+
+	background-color: var(--light-blue);
+	color: white;
+}
+
+.filter-dropdown {
+	display: inline;
+	margin: 0.0em 0.25em;
+}

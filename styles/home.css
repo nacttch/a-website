@@ -1,0 +1,275 @@
+/* Home page (index.html) styling */
+
+/* Demo reel and overlay */
+#reel-container {
+    position: relative;
+    width: 100%;
+    min-height: 30rem;
+}
+
+video#games-reel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: url('/images/webp/arches.webp'), url("/images/jp2/arches.jp2"), url('/images/arches.jpg'); */
+    background-size: cover;
+    background-position: center center;
+
+    object-fit: cover;
+}
+
+#reel-faded-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: linear-gradient(#0B0B0B66, #0B0B0B66);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#reel-overlay-outer {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 15;
+}
+
+#want-to-make-games {
+    /* text-shadow: 2px 0 black, 0 2px black; */
+    font-weight: 600;
+    padding-top: 10rem;
+    margin: 0;
+}
+
+#reel-overlay-description {
+    position: relative;
+    font-weight: normal;
+    width: 46%;
+    left: 27%;
+}
+
+#reel-overlay-buttons {
+    padding-bottom: 1rem;
+}
+
+#reel-overlay-buttons a {
+    position: relative;
+    width: 50%;
+    vertical-align: middle;
+    padding: 0;
+    text-decoration: none;
+}
+
+#reel-overlay-buttons a button {
+    margin: 0.5em 0;
+    width: 80%;
+}
+
+@media (min-width: 40em) {
+    #reel-overlay-buttons a {
+        padding: 0 1.5em;
+    }
+
+    #reel-overlay-buttons a button {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* Section 2 */
+#section-2 {
+    z-index: 1;
+    position: relative;
+    margin: 0 0;
+    background-color: #F8F8F8;
+    color: black;
+    backface-visibility: hidden;
+}
+
+#section-2 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+#section-2-icon-container {
+    width: 100%;
+    max-width: 100%;
+    float: right;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
+#section-2-icon {
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 50%;
+
+    max-width: 20rem;
+}
+
+#section-2 h2 {
+    margin-top: 0;
+    padding-top: 0.3em;
+}
+
+#section-2 button {
+    display: block;
+    margin: auto;
+}
+
+@media (min-width: 54rem) {
+    #section-2 span {
+        padding: 0;
+    }
+
+    #section-2-icon-container {
+        width: 16rem;
+        margin-bottom: 0;
+        margin-left: 8%;
+    }
+
+    #section-2-icon {
+        width: initial;
+
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #section-2 button {
+        display: inline-block;
+        margin: 0;
+    }
+}
+
+/* Section 3 */
+#section-3 {
+    display: block;
+    overflow:auto;
+    z-index: 5;
+    position: relative;
+    background:
+    /* Faded overlay */
+    linear-gradient(#0B0B0B55, #0B0B0B55),
+    /* Background image */
+    url("../images/jp2/showcase_1_smaller.jp2"), url("../images/webp/showcase_1_smaller.webp"), url("../images/showcase_1_smaller.jpg");
+    /* url("/images/showcase_1_smaller.jpg"); */
+    background-position: center 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section-3-content {
+    display: block;
+
+    width: 100%;
+    float: none;
+
+    padding: 0 10px;
+
+    margin-right: 0;
+    min-width: 24em;
+}
+
+#section-3 button {
+    display: block;
+    margin: auto;
+}
+
+@media (min-width: 40em) {
+    #section-3-content {
+        width: 15%;
+        float: right;
+        margin-right: 8%;
+        padding: 0;
+    }
+
+    #section-3 button {
+        margin: 0;
+    }
+}
+
+/* Section 4 */
+#section-4 {
+    background: linear-gradient(270deg, #891222 0%, #C01930 100%);
+    margin-top: -0.5rem;
+    padding: 0 2em;
+}
+
+#section-4-icon-container {
+    width: 100%;
+    height: 13em;
+    margin: 1em auto;
+}
+
+#section-4-icon {
+    max-width: 10em;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+/* Section 5 */
+#section-5 {
+    background: linear-gradient(270deg, #480F17 0%, #63101E 100%);
+}
+
+#section-5-preview-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-position: top;
+}
+
+#section-5-preview-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1em;
+    vertical-align: bottom;
+
+    background-color: #00000088;
+    background-position: top;
+    color: white;
+    font-weight: normal;
+    -webkit-transition-duration: 0.15s; /* Safari */
+    transition-duration: 0.15s;
+}
+
+#section-5-preview:hover {
+    box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+#section-5-preview:hover #section-5-preview-overlay {
+    background-color: #000000CC;
+    text-decoration: underline;
+}
+
+/* Section 2 */
+#section-6-sponsors {
+    z-index: 1;
+    position: relative;
+    margin: 0 0;
+    background-color: #F8F8F8;
+    color: black;
+}

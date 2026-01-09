@@ -1,0 +1,179 @@
+/* Game page (_layouts/game-page.html) styling */
+
+/* Text */
+#game-main-content {
+	color: black;
+	/* margin-left: 3em; */
+	/* margin-right: 3em; */
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-top: 1em;
+	margin-bottom: 3em;
+}
+
+#game-main-content h1 {
+	color: #BC192F;
+	/* margin-left: -2vw; */
+	margin-bottom: 0.4em;
+}
+
+#game-main-content h2 {
+	text-decoration: underline;
+}
+
+#game-main-content h3 {
+	/* margin-top: 0.8em; */
+}
+
+/* Link styling */
+#game-main-content a {
+	color: #BC192F;
+	text-decoration: none;
+}
+#game-main-content a:hover {
+	color: #991222;
+	text-decoration: underline;
+}
+
+/* Image at top of page */
+#game-top-container {
+	position: relative;
+}
+
+#game-top-img {
+	width: 100%;
+	max-height: 100vh;
+	object-fit: cover;
+	height: auto;
+}
+
+#game-tags-container {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	max-width: calc(50% - 1em);
+}
+
+#game-tags{
+	display: inline;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	padding: 0.1em 0.5em;
+
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+
+	font-size: 1.4em;
+	text-shadow: 2px 2px black;
+	background-color: #FFFFFF20;
+	border-radius: 0.5em;
+
+	/* Prevents the Game-Jam tag from breaking due to Jekyll parsing whitespace */
+	white-space: nowrap;
+}
+
+#game-awards-container {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	max-width: calc(50% - 1em);
+	text-align: right;
+}
+
+#game-awards {
+	position: relative;
+	display: inline;
+	right: 0;
+	bottom: 0;
+	padding: 0.1em 0.5em;
+
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+
+	font-size: 1.4em;
+	text-shadow: 0.1em 0.1em black;
+	background-color: #FFFFFF20;
+	border-radius: 0.4em;
+}
+
+/* About, Play, and Project Members */
+.game-content-section {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/* Screenshots */
+.screenshot-row > .screenshot-column {
+	padding: 0 0.2em;
+}
+
+.screenshot-row {
+	text-align: center;
+}
+
+.screenshot-row:after {
+	content: "";
+	display: table;
+	clear: both;
+	margin-bottom: 2em;
+}
+
+.screenshot-thumbnail {
+	height: auto;
+	width: 100%;
+	margin-bottom: 0.8em;
+}
+
+@media (min-width: 576px) {
+	.screenshot-column {
+		width: 18em !important;
+	}
+}
+.screenshot-column {
+	display: inline-block;
+	max-width: 100%;
+	width: 100%;
+}
+
+img.hover-shadow {
+	transition: 0.1s;
+	cursor: pointer;
+}
+
+video.hover-shadow {
+	transition: 0.1s;
+	cursor: pointer;
+}
+
+.hover-shadow:hover {
+	/* box-shadow: 0 0.3em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.4em 1.1em 0 rgba(0, 0, 0, 0.19); */
+	box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Soundcloud embed */
+.soundcloud-embed {
+	width: 100%;
+	height: 20em;
+}
+
+/* Help from: https://www.ankursheel.com/blog/full-width-you-tube-video-embed; */
+/* Video */
+.video-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+}
+
+.video-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}

@@ -41,3 +41,4 @@ jobs:
           git add *.xml
           git diff --cached --quiet || git commit -m "SEO: update site map"
           git push origin main
+
